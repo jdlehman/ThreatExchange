@@ -217,7 +217,7 @@ func (c *Client) query(apiVersion string, resource string, startTime string, end
 		return "", err
 	}
 	if res.Body == nil {
-		return "", fmt.Errorf("Empty body for query :", u.String())
+		return "", fmt.Errorf("Empty body for query : %v", u.String())
 	}
 	defer res.Body.Close()
 	if res.StatusCode != http.StatusOK {
