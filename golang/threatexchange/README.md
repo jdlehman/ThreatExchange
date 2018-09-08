@@ -5,6 +5,10 @@ A golang library to interface with Facebook ThreatExchange API. This is still ve
 ## Installation
 ``` go get github.com/facebook/ThreatExchange/golang/threatexchange```
 
+## Go Docs
+
+[ThreatExchange Package Documentation](https://godoc.org/github.com/facebook/ThreatExchange/golang/threatexchange)
+
 ## Usage
 
 The ThreatExchange library provides a base set of abstractions for the ThreatExchange API. You instantiate a new ThreatExchange Client and provide it with your appID and secret.
