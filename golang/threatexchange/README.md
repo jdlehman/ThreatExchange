@@ -41,3 +41,9 @@ the second is the raw json of that result, and last is the error(nil if all went
 5. Additional params : to add to the query
 
 Look into the test file for more examples of usage.
+
+## Testing
+
+Set `APP_ID` and `APP_SECRET` environment variables to run tests. These can either be exported into the shell environment or included in a [`.env`](https://github.com/joho/godotenv) file in this directory.
+
+Run `go test`

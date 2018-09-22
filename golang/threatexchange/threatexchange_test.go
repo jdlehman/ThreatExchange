@@ -1,13 +1,16 @@
 package threatexchange
 
 import (
-	"github.com/stretchr/testify/assert"
+	"os"
 	"testing"
+
+	_ "github.com/joho/godotenv/autoload"
+	"github.com/stretchr/testify/assert"
 )
 
-const (
-	appId     = "" // Fill this to make tests run
-	appSecret = "" // Fill this to make tests run
+var (
+	appId     = os.Getenv("APP_ID")
+	appSecret = os.Getenv("APP_SECRET")
 )
 
 func TestQueryThreatDescriptorsOfIpsProxy(t *testing.T) {
